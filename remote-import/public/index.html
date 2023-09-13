@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+		<script src="http://127.0.0.1:8080/Button.js"></script>
+		<script src="http://127.0.0.1:8080/Input.js"></script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<div id="button"></div>
+		<div id="input"></div>
+		<script>
+			console.log("window", window);
+
+			ReactDOM.render(
+				React.createElement(window.Button.default),
+				document.getElementById("button")
+			);
+			ReactDOM.render(
+				React.createElement(window.Input.default),
+				document.getElementById("input")
+			);
+		</script>
+	</body>
+</html>

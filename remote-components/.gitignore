@@ -1,0 +1,9 @@
+.vscode
+.idea
+npm-debug.log
+node_modules
+coverage
+*.log
+.DS_Store
+.husky
+.eslintcache
